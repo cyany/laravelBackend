@@ -14,3 +14,19 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get("/helloWorld",function(){
+	echo "helloWorld";
+});
+
+Route::get("/hello",function(){
+	return view("hello");
+});
+
+Route::get("/id/{id}",function($id){
+	echo $id;
+});
+
+Route::get("/option/{name?}",function($name="abcd"){
+	return $name;
+});

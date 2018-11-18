@@ -92,6 +92,8 @@
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
+
+                <p>aaaLorem ipsum dolor sit amet, consectetur adipisicing elit. Non neque, nobis, laborum, atque ducimus adipisci mollitia eos nemo fuga aperiam hic consequatur assumenda voluptatem vitae reprehenderit quo ratione eius facilis.</p>
             </div>
         </div>
     </body>

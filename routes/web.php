@@ -30,3 +30,11 @@ Route::get("/id/{id}",function($id){
 Route::get("/option/{name?}",function($name="abcd"){
 	return $name;
 });
+Route::get('role',[
+		'middleware'=>'Role:editor',
+		'uses'=>'TestController@index',
+	]);
+Route::get('terminate',[
+		'middleware'=>'terminate',
+		'uses'=>'ABCControler@index',
+	]);

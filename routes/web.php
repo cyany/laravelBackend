@@ -31,10 +31,12 @@ Route::get("/option/{name?}",function($name="abcd"){
 	return $name;
 });
 Route::get('role',[
-		'middleware'=>'Role:editor',
+		'middleware'=>'Role:administer',
 		'uses'=>'TestController@index',
 	]);
+
+Route::get("role1",'TestController@index');
 Route::get('terminate',[
-		'middleware'=>'terminate',
+		'middleware'=>'Terminate',
 		'uses'=>'ABCControler@index',
 	]);

@@ -40,3 +40,5 @@ Route::get('terminate',[
 		'middleware'=>'Terminate',
 		'uses'=>'ABCControler@index',
 	]);
+
+Route::get('/add','DatabaseOperate@index');

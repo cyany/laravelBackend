@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use App\User;
 
 Route::get('/', function () {
     return view('welcome');
@@ -42,3 +43,9 @@ Route::get('terminate',[
 	]);
 
 Route::get('/add','DatabaseOperate@index');
+
+Route::get('/testModel',function(){
+		$email = User::all();
+		return view('hello',['abc'=>$email]);
+
+});
